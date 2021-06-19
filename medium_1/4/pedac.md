@@ -9,6 +9,8 @@ round 4: lights 2, 3, and 5 are now off; 1 and 4 are on    [true, false, false, 
 
 
 
+
+
 ## Example
 lights(5) == [1, 4]
 ([1,2,3,4,5](index))
