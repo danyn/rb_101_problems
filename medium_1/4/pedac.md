@@ -8,9 +8,6 @@ round 3: lights 2 and 3 are now off; 1, 4, and 5 are on    [true, false, false, 
 round 4: lights 2, 3, and 5 are now off; 1 and 4 are on    [true, false, false, true, false]
 
 
-
-
-
 ## Example
 lights(5) == [1, 4]
 ([1,2,3,4,5](index))
@@ -30,21 +27,3 @@ lights(5) == [1, 4]
 use an array of size n 
 
 ## Algorithm
-
-initialize an array of size n to all 1's 
-ary_bank = [1,1,1,1,1]
-
-Do Iteration of n == bank.length
- 1. start = 0 + 1 == 1, 2
- 2. start = 1 + 1 == 2, 3
- 3. start = 2 + 1 == 3, 4
- 4. start = 3 + 1 == 4, 5
-
- Do Nested Iteration on ary_bank
-  from current 'start' every second element toggle 1,0 or 0,1
-
- End Nested Iteration
-
-END Iteration
-
-return ary_bank

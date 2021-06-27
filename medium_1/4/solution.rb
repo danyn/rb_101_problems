@@ -30,3 +30,10 @@ def toggle_lights(number_of_lights)
 end
 
 p toggle_lights(1000)
+
+
+def thousand_lights(n)
+  lights = [true] * n
+  (2..n).each { |num| num.step(n, num) { |i| lights[i - 1] = !lights[i - 1] } }
+  lights.map.with_index { |value, idx| idx + 1 if value } - [nil]
+end
